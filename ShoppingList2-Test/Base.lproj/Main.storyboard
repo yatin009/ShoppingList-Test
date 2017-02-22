@@ -116,17 +116,25 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cdy-CV-c79">
-                                            <rect key="frame" x="191" y="8" width="30" height="30"/>
+                                            <rect key="frame" x="216" y="7" width="30" height="30"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <color key="backgroundColor" red="0.68688531090000005" green="0.66430429130000002" blue="0.66284636529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <state key="normal" title="-"/>
+                                            <connections>
+                                                <action selector="quantityEditActionListner:" destination="t9a-Md-LaM" eventType="touchUpInside" id="Tuj-BB-4SE"/>
+                                            </connections>
                                         </button>
                                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IzG-PX-YY2">
-                                            <rect key="frame" x="320" y="8" width="30" height="30"/>
+                                            <rect key="frame" x="301" y="7" width="30" height="30"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <color key="backgroundColor" red="0.68688531090000005" green="0.66430429130000002" blue="0.66284636529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <state key="normal" title="+"/>
+                                            <connections>
+                                                <action selector="quantityEditActionListner:" destination="t9a-Md-LaM" eventType="touchUpInside" id="bfS-mM-fUv"/>
+                                            </connections>
                                         </button>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Qty." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P5l-o0-L9h">
-                                            <rect key="frame" x="246" y="13" width="39" height="21"/>
+                                            <rect key="frame" x="254" y="12" width="39" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                             <nil key="textColor"/>
@@ -136,6 +144,7 @@
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="listItemNameLabel" destination="fpI-nC-SHh" id="vUl-cB-6FL"/>
+                                    <outlet property="quantityEditListner" destination="IzG-PX-YY2" id="pw9-AK-9Dr"/>
                                     <outlet property="quantityLabel" destination="P5l-o0-L9h" id="ILt-Z4-rCU"/>
                                 </connections>
                             </tableViewCell>

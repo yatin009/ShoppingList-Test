@@ -22,6 +22,7 @@
 		8062E29D1E5D15D3000E4F2C /* ListItemTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8062E29C1E5D15D3000E4F2C /* ListItemTableViewController.swift */; };
 		8062E29F1E5D15F2000E4F2C /* Listitem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8062E29E1E5D15F2000E4F2C /* Listitem.swift */; };
 		8062E2A11E5D1639000E4F2C /* ShopList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8062E2A01E5D1639000E4F2C /* ShopList.swift */; };
+		8062E2A31E5D39D8000E4F2C /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8062E2A21E5D39D8000E4F2C /* Launch Screen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -55,6 +56,7 @@
 		8062E29C1E5D15D3000E4F2C /* ListItemTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListItemTableViewController.swift; sourceTree = "<group>"; };
 		8062E29E1E5D15F2000E4F2C /* Listitem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Listitem.swift; sourceTree = "<group>"; };
 		8062E2A01E5D1639000E4F2C /* ShopList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShopList.swift; sourceTree = "<group>"; };
+		8062E2A21E5D39D8000E4F2C /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 				8062E2801E5D1399000E4F2C /* Assets.xcassets */,
 				8062E2821E5D1399000E4F2C /* LaunchScreen.storyboard */,
 				8062E2851E5D1399000E4F2C /* Info.plist */,
+				8062E2A21E5D39D8000E4F2C /* Launch Screen.storyboard */,
 			);
 			path = "ShoppingList2-Test";
 			sourceTree = "<group>";
@@ -195,6 +198,7 @@
 			files = (
 				8062E2841E5D1399000E4F2C /* LaunchScreen.storyboard in Resources */,
 				8062E2811E5D1399000E4F2C /* Assets.xcassets in Resources */,
+				8062E2A31E5D39D8000E4F2C /* Launch Screen.storyboard in Resources */,
 				8062E27F1E5D1399000E4F2C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

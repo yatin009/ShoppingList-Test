@@ -11,5 +11,5 @@ import RealmSwift
 
 class ListItem : Object{
     dynamic var name : String = ""
-    dynamic var quantity : String = ""
+    dynamic var quantity : String = "0"
 }

@@ -17,11 +17,25 @@ class ListItemTableViewCell: UITableViewCell {
         super.awakeFromNib()
         // Initialization code
     }
+    @IBOutlet weak var quantityEditListner: UIButton!
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
+    }
+    @IBAction func quantityEditActionListner(_ sender: UIButton) {
+        var quant = Int(quantityLabel.text!)
+        if(sender.titleLabel?.text == "+"){
+            quant = (quant! + 1)
+        }else {
+            if(quant == 0 ){
+                return
+            }else{
+                quant = (quant! - 1)
+            }
+        }
+        quantityLabel.text = String(quant!)
     }
 
 }

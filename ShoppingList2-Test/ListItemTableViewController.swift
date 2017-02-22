@@ -70,7 +70,7 @@ class ListItemTableViewController: UITableViewController {
         let listItem = itemListArray[indexPath.row]
         
         cell.listItemNameLabel.text = listItem.name
-
+        cell.quantityLabel.text = listItem.quantity
         return cell
     }
 
@@ -131,7 +131,7 @@ class ListItemTableViewController: UITableViewController {
         }else{
             let realm = try! Realm()
             try! realm.write {
-//                realm.add(self.shopList)
+                realm.add(self.shopList)
                 self.redirectToMainScreen()
             }
         }
@@ -153,7 +153,7 @@ class ListItemTableViewController: UITableViewController {
                     listName = "Shopping List"
                 }
                 self.shopList.name = listName!
-//                realm.add(self.shopList)
+                realm.add(self.shopList)
                 self.redirectToMainScreen()
             }
             print(listName ?? "")
@@ -190,17 +190,23 @@ class ListItemTableViewController: UITableViewController {
     }
     */
 
-    /*
-    // Override to support editing the table view.
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .delete {
-            // Delete the row from the data source
-            tableView.deleteRows(at: [indexPath], with: .fade)
-        } else if editingStyle == .insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
-    }
-    */
+    
+//    // Override to support editing the table view.
+//    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+//        if editingStyle == .delete {
+//            // Delete the row from the data source
+//            let listItem = self.itemListArray[indexPath.row]
+//            let realm = try! Realm()
+//            try! realm.write {
+//                realm.delete(listItem)
+//                shopList.listItems = List(itemListArray);
+//            }
+//            initializeList(true)
+//        } else if editingStyle == .insert {
+//            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
+//        }    
+//    }
+    
 
     /*
     // Override to support rearranging the table view.
